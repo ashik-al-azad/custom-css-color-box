@@ -1,0 +1,30 @@
+*,*::after,*::before{
+   box-sizing: border-box;
+}
+body{
+   font-family: sans-serif;
+}
+.container{
+   display: flex;
+   text-align: center;
+   align-items: flex-start;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.container div{
+   padding: 5px;
+   flex-basis: 30px ;
+}
+.child1{
+   background-color: red;
+   order: 2;
+   flex: 1;
+}
+.child2{
+   background-color: green;
+   flex: 1;
+   order: 1;
+}
+.child3{
+   background-color: yellow;
+}
